@@ -1,4 +1,4 @@
-Known Errata for Chapter 1
+Updates for Chapter 1
 --------------------------
 
 * ...
