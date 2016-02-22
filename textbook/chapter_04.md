@@ -1,4 +1,5 @@
 Chapter 4 Walkthrough
+---------------------
 
 Note:  you'll find it very useful to have two terminals open at a time:  one in which to issue commands, and the other in which to keep rails running.
 
@@ -12,7 +13,7 @@ You can ignore adding the debugger gem since it is no longer used, and the byebu
 
 The next place to update the instructions is
 
-Start the app with rails † server and point a browser to http:// localhost: 3000.
+Start the app with rails server and point a browser to http:// localhost: 3000.
 
 Fox, Armando; Patterson, David (2014-01-03). Engineering Software as a Service: An Agile Approach Using Cloud Computing (Kindle Locations 3291-3292). Strawberry Canyon LLC. Kindle Edition. 
 
@@ -40,8 +41,8 @@ The next part that should be updated is:
 
 ```ruby
 Create a file app/ models/ movie.rb containing just these three lines: http:// pastebin.com/ 1zatve2r 
-1  class † Movie † < † ActiveRecord:: Base 
-2 † † † attr_accessible †: title, †: rating, †: description, †: release_date
+1  class Movie < ActiveRecord:: Base 
+2    attr_accessible :title, :rating, :description, :release_date
 3  end
 ```
 
@@ -63,7 +64,7 @@ You will then proceed to add controller, view, and stylesheet code as directed.
 
 When you get to the section on debugging, be aware that Rails4 uses byebug for debugging, so that you no longer have to start up the server with --debugger, and that you can insert debugger OR byebug at the point in your code where you want to stop the server (use -debugger and/or -byebug within your haml code)
 
-The second way to debug correctness problems is with an interactive debugger. We already installed the debugger gem via our Gemfile; to use the debugger in a Rails app, start the app server using rails server --debugger, and insert the statement debugger at the point in your code where you want to stop the program. When you hit that statement, the terminal window where you started the server will give you a debugger prompt. In Section † 4.7, weíll show how to use the debugger to shed some light on Rails internals.
+The second way to debug correctness problems is with an interactive debugger. We already installed the debugger gem via our Gemfile; to use the debugger in a Rails app, start the app server using rails server --debugger, and insert the statement debugger at the point in your code where you want to stop the program. When you hit that statement, the terminal window where you started the server will give you a debugger prompt. In Section 4.7, weíll show how to use the debugger to shed some light on Rails internals.
 
 Fox, Armando; Patterson, David (2014-01-03). Engineering Software as a Service: An Agile Approach Using Cloud Computing (Kindle Locations 3826-3830). Strawberry Canyon LLC. Kindle Edition. 
 
