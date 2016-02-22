@@ -56,7 +56,7 @@ You can go ahead and seed the database as shown, but when you create your contro
 # add below all other methods
 private
 
-def movie_params
+  def movie_params
     params.require(:movie).permit(:title, :rating, :description, :release_date)
   end
 ```
